@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.Controller">
+   <children>
+   <Button fx:id="delete" layoutX="746.0" layoutY="256.0" mnemonicParsing="false" onAction="#DeleteLikes" onMouseClicked="#DeleteLikes" text="删除" AnchorPane.leftAnchor="746.0" AnchorPane.topAnchor="256.0">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete1" layoutX="746.0" layoutY="423.0" mnemonicParsing="false" onAction="#DeleteGoods" onMouseClicked="#DeleteGoods" text="删除" AnchorPane.leftAnchor="746.0" AnchorPane.topAnchor="423.0">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="12.0" />
+         </font>
+      </Button>
+      <SplitPane dividerPositions="0.3794466403162055" orientation="VERTICAL" prefHeight="255.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="800.0">
+               <children>
+                  <ImageView fx:id="head" fitHeight="93.0" fitWidth="110.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../../head.png" />
+                     </image></ImageView>
+                  <Label fx:id="nickname" layoutX="160.0" layoutY="40.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="modify" layoutX="746.0" layoutY="67.0" mnemonicParsing="false" onAction="#Modify" onMouseClicked="#Modify" text="修改" AnchorPane.leftAnchor="746.0" AnchorPane.topAnchor="67.0">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="798.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="30.0" layoutY="20.0" text="昵称:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="70.0" text="学校:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="120.0" text=" QQ:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="120.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="petname" layoutX="75.0" layoutY="20.0" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="20.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="school" layoutX="75.0" layoutY="70.0" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="qq" layoutX="75.0" layoutY="120.0" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="120.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="30.0" layoutY="20.0" text="  UID:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="70.0" text="手机号码:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="120.0" text=" 微信号:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="120.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="id" layoutX="80.0" layoutY="20.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="20.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="phone" layoutX="110.0" layoutY="70.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="wechat" layoutX="100.0" layoutY="120.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="120.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <ScrollPane layoutY="280.0" prefHeight="140.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="280.0">
+         <content>
+            <TableView fx:id="LikeList" editable="true" prefHeight="138.0" prefWidth="785.0">
+              <columns>
+                  <TableColumn fx:id="likeid" prefWidth="75.0" text="商品号" />
+                <TableColumn fx:id="goodcol" prefWidth="160.0" text="商品名" />
+                <TableColumn fx:id="pricecol" prefWidth="75.0" text="价格" />
+                  <TableColumn fx:id="introcol" prefWidth="475.0" text="简介" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutY="450.0" prefHeight="140.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="450.0">
+         <content>
+            <TableView fx:id="GoodsList" editable="true" prefHeight="138.0" prefWidth="785.0">
+               <columns>
+                  <TableColumn fx:id="goodsid" prefWidth="75.0" text="商品号" />
+                  <TableColumn fx:id="good1" prefWidth="160.0" text="商品名" />
+                  <TableColumn fx:id="price1" prefWidth="75.0" text="价格" />
+                  <TableColumn fx:id="intro1" prefWidth="475.0" text="简介" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="10.0" layoutY="257.0" text="我的收藏：" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="257.0">
+         <font>
+            <Font name="Microsoft YaHei UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="428.0" text="我的商品：" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="428.0">
+         <font>
+            <Font name="Microsoft YaHei" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

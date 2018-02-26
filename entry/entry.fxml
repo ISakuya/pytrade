@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="/entry/entry.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entry.EntryController">
+   <children>
+       <SplitPane dividerPositions="0.2" layoutY="-8.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-8.0">
+          <items>
+              <AnchorPane fx:id="upLayer" prefHeight="200.0" prefWidth="800.0">
+                 <children>
+                     <TextField fx:id="searchInput" layoutX="267.0" layoutY="48.0" />
+                     <Label layoutX="150.0" layoutY="53.0" text="PY SYSTEM" />
+                     <Button fx:id="searchButton" layoutX="460.0" layoutY="48.0" mnemonicParsing="false" onAction="#search" text="Search" />
+                     <GridPane styleClass="test">
+                         <columnConstraints>
+                             <ColumnConstraints />
+                         </columnConstraints>
+                         <rowConstraints>
+                             <RowConstraints />
+                             <RowConstraints />
+                         </rowConstraints>
+                     </GridPane>
+                     <HBox fx:id="upButtons" layoutX="600.0" layoutY="80.0" prefHeight="23.0" prefWidth="200.0">
+                         <Button mnemonicParsing="false" onAction="#showReg" text="注册" />
+                         <Button mnemonicParsing="false" onAction="#showLogin" text="登录" />
+                     </HBox>
+
+                 </children>
+
+              </AnchorPane>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                 <children>
+                     <SplitPane dividerPositions="0.2" layoutX="114.0" layoutY="71.0" prefHeight="301.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <items>
+                            <AnchorPane fx:id="classShower" prefHeight="160.0" prefWidth="100.0">
+                               <children>
+                                   <VBox fx:id="classBox">
+                                       <Label fx:id="all" text="全部商品"></Label>
+                                       <Label fx:id="book" text="书籍" />
+                                       <Label fx:id="dayly" text="日用品" />
+                                       <Label fx:id="clothes" text="服装" />
+                                       <Label fx:id="elec" text="电子产品" />
+                                       <Label fx:id="cd" text="光盘" />
+                                       <Label fx:id="office" text="办公用品" />
+                                       <Label fx:id="virtual" text="虚拟物品" />
+                                       <Label fx:id="other" text="其他" />
+                                   </VBox>
+                               </children>
+                            </AnchorPane>
+                            <AnchorPane>
+                               <children>
+                                   <ScrollPane fx:id="gridScroll" prefHeight="440.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <content>
+                                     <AnchorPane fx:id="goodsList" prefHeight="470.0" prefWidth="531.0">
+
+                                     </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                               </children>
+                            </AnchorPane>
+
+                        </items>
+         
+                     </SplitPane>
+                 </children>
+              </AnchorPane>
+          </items>
+       </SplitPane>
+   </children>
+</AnchorPane>

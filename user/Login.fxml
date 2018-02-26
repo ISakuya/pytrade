@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.Log_Controller">
+   <children>
+      <BorderPane layoutY="50.0" prefHeight="550.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <top>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="301.9512176513672" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../../login.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="160.0" layoutY="50.0" prefWidth="75.0" text="用户名：" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="50.0">
+                     <font>
+                        <Font name="Microsoft YaHei" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="160.0" layoutY="130.0" text="密码：" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="586.0" AnchorPane.topAnchor="130.0">
+                     <font>
+                        <Font name="Microsoft YaHei" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" layoutX="300.0" layoutY="50.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="50.0" />
+                  <PasswordField fx:id="pass" layoutX="300.0" layoutY="130.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="130.0" />
+                  <Button fx:id="register" layoutX="570.0" layoutY="47.0" mnemonicParsing="false" onAction="#Register" onMouseClicked="#Register" text="注册" textFill="#3c23b4" underline="true" AnchorPane.leftAnchor="570.0" AnchorPane.topAnchor="45.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="14.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust contrast="0.95" />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="confirm" layoutX="255.0" layoutY="40.0" mnemonicParsing="false" onAction="#Confirm" onMouseClicked="#Confirm" text=" 确定 " AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="255.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel" layoutX="490.0" layoutY="40.0" mnemonicParsing="false" onAction="#Cancel" onMouseClicked="#Cancel" text=" 取消 " AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="490.0" AnchorPane.rightAnchor="253.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

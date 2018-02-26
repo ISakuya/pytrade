@@ -1,0 +1,30 @@
+.goodBlock{
+   -fx-padding: 10px;
+   -fx-border-width: 5px;
+}
+#upLayer{
+    -fx-min-height: 120px;
+    -fx-max-height: 120px;
+}
+#classShower{
+    -fx-min-width: 160px;
+    -fx-max-width: 160px;
+}
+#classBox{
+    -fx-spacing: 15px;
+    -fx-padding: 30px;
+    -fx-font-size: 13px;
+}
+#upButtons{
+    -fx-spacing: 10px;
+}
+#upButtons Button{
+    -fx-pref-width: 70px;
+}
+.goodsName{
+    -fx-font-color: blue;
+    -fx-font-size: 13px;
+}
+.goodsPrice{
+    -fx-font-color:red;
+}

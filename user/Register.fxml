@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.Reg_Controller">
+   <children>
+      <BorderPane layoutY="100.0" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <left>
+            <ImageView fitHeight="300.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../register.jpg" />
+               </image>
+            </ImageView>
+         </left>
+         <center>
+            <AnchorPane prefHeight="400.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="昵称：" textAlignment="CENTER" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="密码：" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="确认密码：" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="120.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="学校：" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="180.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="手机号：" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="240.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="QQ号：" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="300.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="微信号：" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="360.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="137.0" layoutY="7.0" text="*">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="137.0" layoutY="65.0" text="*">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="168.0" layoutY="125.0" text="*">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="153.0" layoutY="244.0" text="*">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+         <right>
+            <AnchorPane prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="name" layoutX="35.0" layoutY="3.0" prefHeight="25.0" prefWidth="320.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="0.0" />
+                  <PasswordField fx:id="pass" layoutX="35.0" layoutY="58.0" prefHeight="25.0" prefWidth="320.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="60.0" />
+                  <PasswordField fx:id="pass_con" layoutX="35.0" layoutY="121.0" prefHeight="25.0" prefWidth="320.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="120.0" />
+                  <TextField fx:id="school" layoutX="35.0" layoutY="177.0" prefHeight="25.0" prefWidth="320.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="180.0" />
+                  <TextField fx:id="phone" layoutX="35.0" layoutY="238.0" prefHeight="25.0" prefWidth="320.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="240.0" />
+                  <TextField fx:id="qq" layoutX="35.0" layoutY="297.0" prefHeight="25.0" prefWidth="320.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="300.0" />
+                  <TextField fx:id="wechat" layoutX="35.0" layoutY="363.0" prefHeight="25.0" prefWidth="320.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="360.0" />                                 
+               </children>
+            </AnchorPane>
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="100.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="confirm" layoutX="490.0" layoutY="30.0" mnemonicParsing="false" onAction="#Confirm" onMouseClicked="#Confirm" text=" 确定 " AnchorPane.leftAnchor="490.0" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel" layoutX="630.0" layoutY="30.0" mnemonicParsing="false" onAction="#Cancel" onMouseClicked="#Cancel" text=" 取消 " AnchorPane.leftAnchor="630.0" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font name="Microsoft YaHei" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="272.0" layoutY="10.0" text="（带*号的为必填项！）" AnchorPane.leftAnchor="272.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
